@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import hLogo from '../styles/images/hLogo3.webp';
 
 export default class Header extends Component {
   constructor(props) {
@@ -13,7 +14,7 @@ export default class Header extends Component {
       <div className="headerContainer">
         <div className="searchContainer">
           <div className="titleContainer">
-            <h1 className="logo">H</h1>
+            <img src={hLogo} alt="logo" className="logo"/>
             <div className="title">
               <h2>Search</h2>
               <h2>Hacker News</h2>
