@@ -1,6 +1,29 @@
-body {
-  color: blue;
-}
-.search {
+.searchContainer {
   background: $primaryColor;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .titleContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    // .logo{
+    //   // align-self: flex-start;
+    // }
+
+    .title{
+      align-self: flex-end;
+
+      display: flex;
+      flex-direction: column;
+      // justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+
+  .search{
+    display: flex;
+  }
 }
