@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import hLogo from "../styles/images/hLogo3.webp";
-import algolia from '../styles/images/algolia.svg';
+import algolia from "../styles/images/algolia.svg";
 
 export default class Header extends Component {
   constructor(props) {
@@ -21,20 +21,22 @@ export default class Header extends Component {
               <h2>Hacker News</h2>
             </div>
           </div>
-          <div className="search">
-            <i class="fas fa-search" />
-            <input
-              type="text"
-              placeholder="Search stories by title, url, or author"
-            />
+          <div className="searchSubCtnr">
+            <div className="search">
+              <i className="fas fa-search" />
+              <input
+                type="text"
+                placeholder="Search stories by title, url, or author"
+              />
+            </div>
+            <p className="credit">
+              by{" "}
+              <a href="https://www.algolia.com/?utm_source=hn_search&utm_medium=link&utm_term=logo&utm_campaign=hn_algolia">
+                <img src={algolia} alt="algolia logo hyperlink" />
+              </a>
+            </p>
           </div>
-          <p className="credit">
-            by{" "}
-            <a href="https://www.algolia.com/?utm_source=hn_search&utm_medium=link&utm_term=logo&utm_campaign=hn_algolia">
-              <img src={algolia} alt="algolia logo hyperlink"/>
-            </a>
-          </p>
-          <h2 className="settingsBtn">SettingsBtn</h2>
+            <i class="fas fa-sliders-h settings" />
         </div>
         <div className="filter">
           <h5>Search</h5>
