@@ -36,28 +36,37 @@ export default class Header extends Component {
               </a>
             </p>
           </div>
-            <i class="fas fa-sliders-h settings" />
+          <i class="fas fa-sliders-h settings" />
         </div>
-        <div className="filter">
-          <h5>Search</h5>
+        <div className="filterContainer">
+          <div className="filter">
+            <h5 className="cat1">Search</h5>
+            <select className="cat1 dropdown">
+              <option value="all">All</option>
+              <option value="stories">Stories</option>
+              <option value="comments">Comments</option>
+            </select>
+            <h5 className="cat2">by</h5>
+            <select className="cat2 dropdown">
+              <option value="popularity">Popularity</option>
+              <option value="date">Date</option>
+            </select>
+            <h5 className="cat3">for</h5>
+            <select className="cat3 dropdown">
+              <option value="allTime">All Time</option>
+              <option value="24">Last 24h</option>
+              <option value="week">Past Week</option>
+              <option value="month">Past Month</option>
+              <option value="year">Past Year</option>
+              <option value="custom">Custom Range</option>
+            </select>
+          </div>
+        </div>
+
+        <div className="select_box">
           <select>
-            <option value="all">All</option>
-            <option value="stories">Stories</option>
-            <option value="comments">Comments</option>
-          </select>
-          <h5>by</h5>
-          <select>
-            <option value="popularity">Popularity</option>
-            <option value="date">Date</option>
-          </select>
-          <h5>for</h5>
-          <select>
-            <option value="allTime">All Time</option>
-            <option value="24">Last 24h</option>
-            <option value="week">Past Week</option>
-            <option value="month">Past Month</option>
-            <option value="year">Past Year</option>
-            <option value="custom">Custom Range</option>
+            <option>Test This Select</option>
+            <option>Test This Select</option>
           </select>
         </div>
       </div>
