@@ -43,7 +43,7 @@ export default class Header extends Component {
             <h5 className="cat1">Search</h5>
             <select className="cat1 dropdown">
               <option value="all">All</option>
-              <option value="stories">Stories</option>
+              <option value="stories" selected>Stories</option>
               <option value="comments">Comments</option>
             </select>
             <h5 className="cat2">by</h5>
@@ -61,13 +61,10 @@ export default class Header extends Component {
               <option value="custom">Custom Range</option>
             </select>
           </div>
-        </div>
-
-        <div className="select_box">
-          <select>
-            <option>Test This Select</option>
-            <option>Test This Select</option>
-          </select>
+          <div className="countContainer">
+            <p className="count">17,213,000 (0.007 seconds)</p>
+            <i className="fas fa-share-alt shareIcon"></i>
+          </div>
         </div>
       </div>
     );
