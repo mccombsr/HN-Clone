@@ -1,0 +1,27 @@
+//Colors
+$primaryColor: #ff742b;
+$secondaryColor: #fffff1;
+$filterColor: #FDFDFD;
+
+// Media Query Mixins
+
+  //Add credit
+  @mixin mediaSm {
+    @media screen and (min-width: 480px){
+      @content;
+    }
+  }
+
+  //Add title and results count/ShareBTN
+  @mixin mediaMd {
+    @media screen and (min-width: 770px){
+      @content;
+    }
+  }
+  
+  //Explicitly set width of header and content
+  @mixin mediaLg {
+    @media screen and (min-width: 1185px){
+      @content;
+    }
+  }

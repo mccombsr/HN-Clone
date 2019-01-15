@@ -1,8 +1,7 @@
-body {
-  font-family: Verdana, Geneva, sans-serif;
 
   .headerContainer {
     position: fixed;
+    z-index: 1;
 
     .searchContainer {
       background: $primaryColor;
@@ -91,7 +90,7 @@ body {
     }
 
     .filterContainer {
-      // background: $filterColor;
+      background: $filterColor;
       width: 100%;
       height: 52px;
       display: flex;
@@ -128,4 +127,3 @@ body {
       }
     }
   }
-}
