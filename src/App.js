@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Components/Header';
-import Results from './Components/Results';
+import routes from './routes';
 import Footer from './Components/Footer';
 import '../src/styles/App.scss';
 
@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="appContainer">
         <Header/>
-        <Results/>
+        {routes}
         <Footer/>
       </div>
     );
