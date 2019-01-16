@@ -3,6 +3,7 @@
 @import "media";
 @import "Header";
 @import "Results";
+@import "Settings";
 
 .appContainer {
   height: 100vh 52+75px;
@@ -10,18 +11,20 @@
   display: flex;
   flex-direction: column;
 
-  // .footerContainer{
-  //   background: yellow;
-  //   position: relative;
-
-  //   ul{
-  //     display: flex;
-  //     justify-content: center;
-
-  //     li{
-  //       margin: 3px;
-  //     }
-  //   }
-  // }
+  .footerContainer {
+    position: relative;
+    top: 52+75px;
+    height: 75px;
+  
+    ul {
+      margin-top: 13px;
+      display: flex;
+      justify-content: center;
+  
+      li {
+        margin: 3px;
+      }
+    }
+  }
 }
 
