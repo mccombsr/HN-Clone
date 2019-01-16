@@ -50,3 +50,19 @@
     }
   }
 }
+
+.footerContainer {
+  position: relative;
+  top: 52+75px;
+  height: 75px;
+
+  ul {
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin: 3px;
+    }
+  }
+}

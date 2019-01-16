@@ -4,26 +4,24 @@
 @import "Header";
 @import "Results";
 
-.App {
-  background: pink;
-  height: 100vh;
-  width: 100vw;
+.appContainer {
+  height: 100vh 52+75px;
   font-family: Verdana, Geneva, sans-serif;
   display: flex;
   flex-direction: column;
 
-  .footerContainer{
-    background: yellow;
-    position: relative;
+  // .footerContainer{
+  //   background: yellow;
+  //   position: relative;
 
-    ul{
-      display: flex;
-      justify-content: center;
+  //   ul{
+  //     display: flex;
+  //     justify-content: center;
 
-      li{
-        margin: 3px;
-      }
-    }
-  }
+  //     li{
+  //       margin: 3px;
+  //     }
+  //   }
+  // }
 }
 

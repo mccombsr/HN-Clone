@@ -1,129 +1,128 @@
+.headerContainer {
+  position: fixed;
+  z-index: 1;
 
-  .headerContainer {
-    position: fixed;
-    z-index: 1;
+  .searchContainer {
+    background: $primaryColor;
+    color: $secondaryColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    .searchContainer {
-      background: $primaryColor;
-      color: $secondaryColor;
+    width: 100vw;
+    height: 75px;
+
+    .titleContainer {
+      height: 100%;
+      width: 25%;
       display: flex;
       justify-content: space-between;
       align-items: center;
 
-      width: 100vw;
-      height: 75px;
+      .logo {
+        width: 55px;
+        margin-left: 8px;
+      }
 
-      .titleContainer {
-        height: 100%;
-        width: 25%;
+      //This will need a media-query to collapse at smaller screen sizes
+      .title {
+        margin-right: 55px;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 23px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    .searchSubCtnr {
+      width: 75%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .search {
+        background: #ffffff;
+        width: 55vw;
+        height: 68%;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        .logo {
-          width: 55px;
-          margin-left: 8px;
+        i {
+          // background: pink;
+          font-size: 1.8rem;
+          width: 10%;
+          color: $primaryColor;
         }
 
-        //This will need a media-query to collapse at smaller screen sizes
-        .title {
-          margin-right: 55px;
-          font-family: Verdana, Geneva, sans-serif;
-          font-size: 23px;
+        input {
+          width: 90%;
+          height: 90%;
+          border: none;
+          font-size: 1.15rem;
 
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
+          &::placeholder {
+            color: #ccd6e3;
+          }
         }
       }
-
-      .searchSubCtnr {
-        width: 75%;
-        height: 100%;
+      .credit {
+        color: #000;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+        width: 110px;
+        height: 20px;
+        margin: 12px;
 
-        .search {
-          background: #ffffff;
-          width: 55vw;
-          height: 68%;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-
-          i {
-            // background: pink;
-            font-size: 1.8rem;
-            width: 10%;
-            color: $primaryColor;
-          }
-
-          input {
-            width: 90%;
-            height: 90%;
-            border: none;
-            font-size: 1.15rem;
-
-            &::placeholder {
-              color: #ccd6e3;
-            }
-          }
-        }
-        .credit {
-          color: #000;
-          display: flex;
-          justify-content: space-between;
-          width: 110px;
-          height: 20px;
-          margin: 12px;
-
-          img {
-            width: 82%;
-          }
+        img {
+          width: 82%;
         }
       }
-      .settings {
-        font-size: 1.8rem;
-        margin: 0px 25px;
+    }
+    .settings {
+      font-size: 1.8rem;
+      margin: 0px 25px;
+    }
+  }
+
+  .filterContainer {
+    background: $filterColor;
+    width: 100%;
+    height: 52px;
+    display: flex;
+
+    .filter {
+      width: 500px;
+      padding: 0px 10px;
+      display: flex;
+      align-items: center;
+
+      .dropdown {
+        font-size: 1rem;
+        color: #5c5c5c;
+        border-color: #c3c3c3;
+        border-radius: 4px;
+        height: 60%;
+        margin: 0px 15px 0px 10px;
+        outline: none;
       }
     }
 
-    .filterContainer {
-      background: $filterColor;
+    .countContainer {
       width: 100%;
-      height: 52px;
+      height: 100%;
       display: flex;
+      justify-content: flex-end;
+      align-items: center;
 
-      .filter {
-        width: 500px;
-        padding: 0px 10px;
-        display: flex;
-        align-items: center;
-
-        .dropdown {
-          font-size: 1rem;
-          color: #5c5c5c;
-          border-color: #c3c3c3;
-          border-radius: 4px;
-          height: 60%;
-          margin: 0px 15px 0px 10px;
-          outline: none;
-        }
-      }
-
-      .countContainer {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-
-        .shareIcon {
-          color: #c3c3c3;
-          margin: 0px 20px 5px 20px;
-          font-size: 1.25rem;
-        }
+      .shareIcon {
+        color: #c3c3c3;
+        margin: 0px 20px 5px 20px;
+        font-size: 1.25rem;
       }
     }
   }
+}

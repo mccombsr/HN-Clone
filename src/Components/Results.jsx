@@ -16,6 +16,9 @@ export default class Results extends Component{
                 <Story/>
                 <Story/>
                 <Story/>
+                <Story/>
+                <Story/>
+             
                 <div className="btnContainer">
                     <div className="pageBtn btn">1</div>
                     <div className="pageBtn btn">2</div>
