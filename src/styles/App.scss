@@ -5,7 +5,25 @@
 @import "Results";
 
 .App {
+  background: pink;
+  height: 100vh;
+  width: 100vw;
   font-family: Verdana, Geneva, sans-serif;
   display: flex;
   flex-direction: column;
+
+  .footerContainer{
+    background: yellow;
+    position: relative;
+
+    ul{
+      display: flex;
+      justify-content: center;
+
+      li{
+        margin: 3px;
+      }
+    }
+  }
 }
+
