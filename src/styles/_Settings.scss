@@ -2,7 +2,11 @@
     background: pink;
     height:100%;
     position: relative;
-    top: 52+75px;
+    top: 75px;
+
+    .settingsTitle{
+        background: orange;
+    }
 
     h1{
         background: #FDFDFD;
