@@ -1,18 +1,88 @@
-.settingsContainer{
-    background: pink;
-    height:100%;
-    position: relative;
-    top: 75px;
+.settingsContainer {
+  background: pink;
+  height: 100%;
+  position: relative;
+  top: 75px;
 
-    .settingsTitle{
-        background: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .settingsTitle {
+    background: orange;
+    width: 100%;
+    padding-left: 25px;
+  }
+
+  h1 {
+    background: #fdfdfd;
+    font-size: 1.5rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .settings {
+    background: yellow;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .section {
+      width: 85%;
     }
 
-    h1{
-        background: #FDFDFD;
-        font-size: 1.5rem;
-        height: 50px;
+    h2 {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .display{
+        background: pink;
+        width: 100%;
+
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        // align-items: center;
     }
+
+    .group{
+        width: 100%;
+        background: paleturquoise;
+        margin: 5px 0px;
+
+        display: flex;
+        justify-content: space-evenly;
+
+        p{
+            background: plum;
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        select{
+            background: burlywood;
+        }
+    }
+
+    // .label{
+    //     background: palegreen;
+    //     width: 50%;
+    //     align-self: flex-start;
+    // }
+    
+    // .dropDown{
+    //     background: palevioletred;
+    //     width: 50%;
+    //     align-self: flex-end;
+    // }
+
+    .selector {
+      display: flex;
+      width: auto;
+      background: plum;
+    }
+  }
 }
