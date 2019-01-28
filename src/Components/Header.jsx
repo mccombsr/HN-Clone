@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import hLogo from "../styles/images/hLogo3.webp";
 import algolia from "../styles/images/algolia.svg";
+import Search from './Search';
 
 export default class Header extends Component {
   constructor(props) {
@@ -22,13 +23,14 @@ export default class Header extends Component {
             </div>
           </div>
           <div className="searchSubCtnr">
-            <div className="search">
+            <Search/>
+            {/* <div className="search">
               <i className="fas fa-search" />
               <input
                 type="text"
                 placeholder="Search stories by title, url, or author"
               />
-            </div>
+            </div> */}
             <p className="credit">
               by{" "}
               <a href="https://www.algolia.com/?utm_source=hn_search&utm_medium=link&utm_term=logo&utm_campaign=hn_algolia">
